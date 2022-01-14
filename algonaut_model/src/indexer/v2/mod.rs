@@ -722,7 +722,7 @@ pub struct ApplicationLocalState {
 
     /// `tkv` storage.
     #[serde(rename = "key-value")]
-    pub key_value: TealKeyValueStore,
+    pub key_value: Option<TealKeyValueStore>,
 
     /// Round when the account opted into the application.
     #[serde(rename = "opted-in-at-round")]
